@@ -42,4 +42,5 @@ estrella(
         )
     )
 )
+# Introduzco este input para que no se cierre la ventana de golpe al acabar de trazar la estrella.
 input("Pulse la tecla Enter para cerrar la ventana: ")
