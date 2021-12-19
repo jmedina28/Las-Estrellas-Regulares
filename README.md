@@ -34,7 +34,10 @@ Para documentarme acerca de cómo usar el módulo Turtle he usado el siguiente r
 ## 2. Diagrama de flujo<a name="id2"></a>
 El diagrama de flujo es el siguiente:
 
-(Diagrama de flujo)
+<br>
+<img height="450" src="https://github.com/jmedina28/Las-Estrellas-Regulares/blob/ebae8d1cf1a3cdc19e336bbb307ac8271a3062d1/flowchart.jpg" />
+<br>
+
 
 ## 3. Código<a name="id3"></a>
 ```python
