@@ -34,6 +34,7 @@ def estrella(puntas, lado=200):
     return
 
 
+# Ejecutamos la función que va a generar nuestra estrella de n puntas:
 estrella(
     int(
         input(
