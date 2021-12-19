@@ -2,7 +2,7 @@
 import turtle
 
 
-def estrella(puntas):
+def estrella(puntas, lado=200):
     # Sobre esta función voy a desarollar el ejercicio.
     # Para calcular el ángulo necesitamos primero hallar el mcd entre dos números enteros.
     def mcd(a, b):
@@ -19,6 +19,19 @@ def estrella(puntas):
             "El número de puntas introducido es insuficiente para trazar correctamente la estrella."
         )
         return
+    for n in range(puntas // 2, 1, -1):
+        # Vamos a comprobar que n y el número de puntas son coprimos.
+        if mcd(puntas, n) == 1:
+            alfa = 360 / puntas * n
+            break
+    # Ahora vamos a trazar la estrella empleando toda la información anterior.
+    for _ in range(puntas):
+        # Trazamos el lado
+        turtle.forward(lado)
+        # Rotamos con el ángulo correspondiente
+        turtle.left(alfa)
+
+    return
 
 
 estrella(int(input("introduzca un valor")))
