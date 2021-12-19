@@ -2,7 +2,7 @@
 import turtle
 
 
-def estrella():
+def estrella(puntas):
     # Sobre esta función voy a desarollar el ejercicio.
     # Para calcular el ángulo necesitamos primero hallar el mcd entre dos números enteros.
     def mcd(a, b):
@@ -13,7 +13,12 @@ def estrella():
                 div = n
         return div
 
-    print(mcd(5, 25))
+    # Antes de continuar desarrollando la función hago referencia a que tiene que tener más de 4 puntas.
+    if puntas <= 4:
+        print(
+            "El número de puntas introducido es insuficiente para trazar correctamente la estrella."
+        )
+        return
 
 
-estrella()
+estrella(int(input("introduzca un valor")))
