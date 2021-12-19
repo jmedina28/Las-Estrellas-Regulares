@@ -26,12 +26,13 @@ def estrella(puntas, lado=200):
             break
     # Ahora vamos a trazar la estrella empleando toda la información anterior.
     for _ in range(puntas):
-        # Trazamos el lado
+        # Trazamos el lado.
         turtle.forward(lado)
-        # Rotamos con el ángulo correspondiente
+        # Rotamos con el ángulo correspondiente.
         turtle.left(alfa)
 
     return
 
 
 estrella(int(input("introduzca un valor")))
+input("Pulse la tecla Enter para cerrar la ventana.")
