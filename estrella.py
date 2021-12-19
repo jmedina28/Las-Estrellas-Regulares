@@ -34,5 +34,11 @@ def estrella(puntas, lado=200):
     return
 
 
-estrella(int(input("introduzca un valor")))
-input("Pulse la tecla Enter para cerrar la ventana.")
+estrella(
+    int(
+        input(
+            "Introduzca el número de puntas que desea que tenga su estrella(mayor que 4): "
+        )
+    )
+)
+input("Pulse la tecla Enter para cerrar la ventana: ")
